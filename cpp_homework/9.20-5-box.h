@@ -1,14 +1,16 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Box{
-    private:
-        double length;
-        double width;
-        double height;
-    public:
-        Box();
-        Box(double l = 10 , double w = 10 , double h = 10 );
-        void show_volume();
+class Box
+{
+private:
+    double length;
+    double width;
+    double height;
+
+public:
+    Box();
+    Box(double l = 10, double w = 10, double h = 10);
+    void show_volume();
 };
 Box::Box()
 {
@@ -24,5 +26,5 @@ Box::Box(double l, double w, double h)
 }
 void Box::show_volume()
 {
-    cout<<height*width*length<<endl;
+    cout << height * width * length << endl;
 }

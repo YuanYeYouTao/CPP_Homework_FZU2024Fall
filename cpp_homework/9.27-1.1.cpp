@@ -5,9 +5,9 @@ class simplecat
 {
 public:
     simplecat(int age = 2, int weight = 3); // 构造函数，对变量进行初始化
-    ~simplecat(); // 析构函数
-    int GetAge(); // 获取年龄
-    int GetWeight(); // 获取体重
+    ~simplecat();                           // 析构函数
+    int GetAge();                           // 获取年龄
+    int GetWeight();                        // 获取体重
 
 private:
     int itsage, itsweight; // 定义两个变量

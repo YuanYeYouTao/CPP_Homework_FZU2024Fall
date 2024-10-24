@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 #define PI 3.14159
 double calCircle_Area(double r)
@@ -10,11 +10,11 @@ double calCircle_Area(double r)
 double set_radius()
 {
     double radius;
-    cout<<"Please enter the radius"<<endl;
-    cin>>radius;
+    cout << "Please enter the radius" << endl;
+    cin >> radius;
     return radius;
 }
 void print_area(double area)
 {
-    cout<<"The area of circle is "<<area<<endl;
+    cout << "The area of circle is " << area << endl;
 }

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Date
@@ -9,7 +9,7 @@ public:
     // Date(int month);
     // Date();
 
-    friend void displayDate(const Date& date);
+    friend void displayDate(const Date &date);
 
 private:
     int month;
@@ -25,7 +25,7 @@ Date::Date(int month, int day, int year) : month(month), day(day), year(year) {}
 
 // Date::Date() : month(1), day(1), year(2005) {}
 
-void displayDate(const Date& date)
+void displayDate(const Date &date)
 {
     cout << date.month << "/" << date.day << "/" << date.year << endl;
 }

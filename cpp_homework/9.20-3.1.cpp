@@ -1,5 +1,5 @@
-#include<iostream>
-#include"9.20-3-array.h"
+#include <iostream>
+#include "9.20-3-array.h"
 
 using namespace std;
 

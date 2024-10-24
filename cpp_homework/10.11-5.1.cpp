@@ -1,44 +1,56 @@
 #include <iostream>
 using namespace std;
 
-class Matrix {
+class Matrix
+{
 private:
     int rows;
     int cols;
-    int** data;
+    int **data;
 
 public:
-    Matrix(int r, int c) : rows(r), cols(c) {
-        data = new int*[rows];
-        for (int i = 0; i < rows; i++) {
+    Matrix(int r, int c) : rows(r), cols(c)
+    {
+        data = new int *[rows];
+        for (int i = 0; i < rows; i++)
+        {
             data[i] = new int[cols];
         }
     }
 
-    ~Matrix() {
-        for (int i = 0; i < rows; i++) {
+    ~Matrix()
+    {
+        for (int i = 0; i < rows; i++)
+        {
             delete[] data[i];
         }
         delete[] data;
     }
 
-    void setElement(int r, int c, int value) {
+    void setElement(int r, int c, int value)
+    {
         data[r][c] = value;
     }
 
-    void print() {
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+    void print()
+    {
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
                 cout << data[i][j] << " ";
             }
             cout << endl;
         }
     }
 
-    Matrix operator+(const Matrix& other) {
+    Matrix operator+(const Matrix &other)
+    {
         Matrix result(rows, cols);
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
                 result.data[i][j] = this->data[i][j] + other.data[i][j];
             }
         }
@@ -46,7 +58,8 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     Matrix a(2, 3);
     Matrix b(2, 3);
     a.setElement(0, 0, 1);

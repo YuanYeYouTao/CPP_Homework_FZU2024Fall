@@ -1,14 +1,16 @@
-#include<iostream>
-#include"9.20-2.1.h"
+#include <iostream>
+#include "9.20-2.1.h"
 using namespace std;
-class Circle{
-    private:
-        double r;
-        double a;
-    public:
-        void get_radius();
-        void get_area();
-        void show_area();
+class Circle
+{
+private:
+    double r;
+    double a;
+
+public:
+    void get_radius();
+    void get_area();
+    void show_area();
 };
 void Circle::get_radius()
 {

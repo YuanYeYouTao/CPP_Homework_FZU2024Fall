@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
-class CCubic {
+class CCubic
+{
 private:
     double len;
+
 public:
     CCubic();
     double calculate_Volume();
@@ -30,16 +32,18 @@ int main()
 {
     int sel;
     sel = 1;
-    do {
+    do
+    {
         cout << "选择:\n\t 1. 计算正方体积；2. 退出程序\n";
         cin >> sel;
-        switch (sel) {
+        switch (sel)
+        {
         case 1:
-            {
-                CCubic c;
-                c.print_Volume();
-                break;
-            }
+        {
+            CCubic c;
+            c.print_Volume();
+            break;
+        }
         default:
             break;
         }

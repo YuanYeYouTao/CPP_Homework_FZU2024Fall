@@ -1,8 +1,10 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class counter {
+class counter
+{
     unsigned int value;
+
 public:
     counter() : value(0) {}
     void operator++();
@@ -10,15 +12,20 @@ public:
     int get() { return value; }
 };
 
-void counter::operator++() {
-    if (value < 6) value++;
+void counter::operator++()
+{
+    if (value < 6)
+        value++;
 }
 
-void counter::operator--() {
-    if (value > 0) value--;
+void counter::operator--()
+{
+    if (value > 0)
+        value--;
 }
 
-int main() {
+int main()
+{
     counter c1;
     for (int i = 0; i < 10; i++)
         ++c1;

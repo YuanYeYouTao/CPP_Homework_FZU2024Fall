@@ -3,22 +3,24 @@
 char sgn(double x)
 {
     if (x >= 0)
-        return('+');
+        return ('+');
     else
-        return('-');
+        return ('-');
 }
 
 double abs(double x)
 {
     if (x >= 0)
-        return(x);
+        return (x);
     else
-        return(-x);
+        return (-x);
 }
 
-class CLinearEquation {
+class CLinearEquation
+{
 private:
     double a, b;
+
 public:
     CLinearEquation(double a1 = 1, double b1 = 0);
     void disp_Equation();

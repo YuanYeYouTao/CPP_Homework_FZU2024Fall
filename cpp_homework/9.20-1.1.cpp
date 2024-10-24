@@ -1,19 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Time{
-    private:
-        int hour;
-        int minute;
-        int sec;
-    public:
-        void set_time()
-        {
-            cin>>hour>>minute>>sec;
-        }
-        void show_time()
-        {
-            cout<<hour<<":"<<minute<<":"<<sec<<endl;
-        }
+class Time
+{
+private:
+    int hour;
+    int minute;
+    int sec;
+
+public:
+    void set_time()
+    {
+        cin >> hour >> minute >> sec;
+    }
+    void show_time()
+    {
+        cout << hour << ":" << minute << ":" << sec << endl;
+    }
 };
 int main()
 {

@@ -1,12 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-template<typename T>
-T plus1(T x, T y) {
+template <typename T>
+T plus1(T x, T y)
+{
     return x + y;
 }
 
-int main() {
+int main()
+{
     int i = 12, j = 34;
     float x1 = 1.2, y1 = 4.5;
     double x2 = 24.5, y2 = 635.4;
