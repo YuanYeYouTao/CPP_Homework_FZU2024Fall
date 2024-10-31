@@ -19,7 +19,19 @@ public:
 
 class Rectangle : public Shape, public PaintCost
 {
+private:
+    int area;
 public:
+    Rectangle()
+    {
+        width = 0;
+        height = 0;
+    }
+    Rectangle(int w, int h)
+    {
+        width = w;
+        height = h;
+    }
     int getArea()
     {
         return (width * height);
@@ -28,13 +40,9 @@ public:
 
 int main(void)
 {
-    Rectangle Rect;
-    int area;
+    Rectangle Rect(7, 8);
 
-    Rect.setWidth(2);
-    Rect.setHeight(3);
-    area = Rect.getArea();
     cout<<"Total area:"<<Rect.getArea()<<endl;
-    cout<<"Total paint cost:"<<Rect.getCost(area)<<endl;
+    cout<<"Total paint cost:"<<Rect.getCost(Rect.getArea())<<endl;
     return 0;
 }
